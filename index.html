@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Quiz App</title>
+</head>
+<body>
+  <div id="registration-screen">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" placeholder="Digite seu nome">
+
+    <label for="surname">Sobrenome:</label>
+    <input type="text" id="surname" placeholder="Digite seu sobrenome">
+
+    <label for="matricula">Matrícula:</label>
+    <input type="text" id="matricula" placeholder="Digite sua matrícula">
+
+    <button onclick="startQuiz()">Iniciar Quiz</button>
+  </div>
+
+  <div id="quiz-screen" style="display:none;">
+    <div id="question-container"></div>
+    <div id="options-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
