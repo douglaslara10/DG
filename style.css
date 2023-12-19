@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   margin: 0;
   padding: 0;
   display: flex;
@@ -12,36 +12,43 @@ body {
 .quiz-container {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
   text-align: center;
+  width: 400px;
 }
 
 .quiz-container h1 {
   color: #333;
+  margin-bottom: 20px;
 }
 
 label {
   display: block;
-  margin-top: 10px;
+  margin-top: 15px;
+  font-size: 16px;
 }
 
 input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 8px;
   box-sizing: border-box;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 button {
   background-color: #4caf50;
   color: #fff;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
-  font-size: 16px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
 button:hover {
@@ -49,19 +56,20 @@ button:hover {
 }
 
 .question-container {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
 .options-container button {
   background-color: #2196F3;
   color: #fff;
-  padding: 10px 20px;
-  margin: 5px;
+  padding: 12px 24px;
+  margin: 8px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
 }
 
 .options-container button:hover {
